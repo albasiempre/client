@@ -35,7 +35,7 @@ const Timeline = () => {
       }
     };
 
-    fetchLatestPosts():
+    fetchLatestPosts();
   },[])
 
 
