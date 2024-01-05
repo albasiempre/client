@@ -6,10 +6,10 @@ const Navbar = () => {
   const { user, logout } = useAuth();
 
   return (
-    <header className="bg-gray-700 p-4 text-white">
+    <header className="bg-teal-400 p-4 text-white">
     <div className="container mx-auto flex justify-between items-center">
-      <h1 className="font-semibold text-xl">
-        <Link href="/">SNS Demo</Link>
+      <h1 className="font-bold text-xl">
+        <Link href="/">GENAU</Link>
       </h1>
       <nav>
         <ul className="flex space-x-4">
@@ -18,14 +18,14 @@ const Navbar = () => {
               href={`/profile/${user.id}`}
               className="bg-white text-gray-900 py-2 px-3 rounded-lg font-medium"
             >
-              プロフィール
+              Profile
             </Link>
             <Link
               href="/logout"
               className="bg-white text-gray-900 py-2 px-3 rounded-lg font-medium"
               onClick={logout}
             >
-             ログアウト
+             Logout
             </Link>
           </>) : (
             <>
@@ -33,13 +33,13 @@ const Navbar = () => {
             href="/login"
             className="bg-white text-gray-900 py-2 px-3 rounded-lg font-medium"
           >
-            ログイン
+            Login
           </Link>
           <Link
             href="/signup"
             className="bg-white text-gray-900 py-2 px-3 rounded-lg font-medium"
           >
-            サインアップ
+            Signup
           </Link>
           </>
           )}

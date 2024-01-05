@@ -53,9 +53,9 @@ const Timeline = () => {
           ></textarea>
           <button
             type="submit"
-            className="mt-2 bg-gray-700 hover:bg-green-700 duration-200 text-white font-semibold py-2 px-4 rounded"
+            className="mt-2 bg-gray-400 hover:bg-teal-400 duration-200 text-white font-semibold py-2 px-4 rounded"
           >
-            投稿
+            POST
           </button>
         </form>
       </div>
